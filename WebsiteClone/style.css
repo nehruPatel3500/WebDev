@@ -665,12 +665,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-   
   }
   
-    
-
   .custom-shape-divider-bottom-1696162272{
     display: none;
   }
@@ -691,7 +687,7 @@ main{
     flex-direction: column;
     font-family: 1.4rem;
     width: 100%;
-    height:200vh;
+    height:100vh;
     & img{
       max-height: 35rem;
       width: auto;
@@ -703,5 +699,4 @@ main{
     
     }
     
-   
   }
