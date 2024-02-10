@@ -647,17 +647,6 @@ main{
   }
 }
 
-
-
-
-
-
-
-
-
- 
-
-
 .my-box{
   width: 100%;
   height: 100vh;
@@ -669,208 +658,50 @@ main{
   height: fit-content;
   background-color: aqua;
 }
-/* Add this at the end of your CSS file */
-
-@media only screen and (max-width: 720px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Override existing styles for mobile devices */
-  .main-header {
+/* MEDIA QUERRY FOR MOBILE DEVICES */
+@media screen and (max-width: 768px) {
+  .grid-container{
+    display: flex;
     flex-direction: column;
-    padding: 1.8rem;
-  }
+    align-items: center;
+    justify-content: center;
 
-  .main-header .header-container img {
-    width: 150px;
+   
   }
+  
+    
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .navbar ul li a {
-    font-size: 1.4rem;
-  }
-
-  main {
-    height: auto;
-  }
-
-  .custom-shape-divider-bottom-1696162272 {
+  .custom-shape-divider-bottom-1696162272{
     display: none;
   }
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
 
+  .nav-items{
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+  }
+  
   .parent {
-    grid-template-columns: 1fr;
-    height: auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 1.4rem;
+    width: 100%;
+    height:200vh;
+    & img{
+      max-height: 35rem;
+      width: auto;
+    }
+    & .hero-para-title{
+      font-size: small;
+      max-width: 70%;
+    }
+    
+    }
+    
+   
   }
-
-  .hero-content {
-    margin: 0;
-  }
-
-  .hero-para p {
-    font-size: 1.2rem;
-  }
-
-  .hero-btn a {
-    padding: 0.8rem 2rem;
-    font-size: 1.4rem;
-  }
-
-  .about-section {
-    margin-bottom: 5rem;
-  }
-
-  .about-section img {
-    width: 10rem;
-    height: auto;
-  }
-
-  .container0 {
-    margin: 1.5rem;
-  }
-
-  .my-para {
-    font-size: 1.4rem;
-    margin-bottom: 50px;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .container {
-    margin: 1rem;
-  }
-
-  .section-course {
-    padding: 3rem;
-  }
-
-  .section-course .grid-four-column {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .section-course .course-div .section-common--title {
-    font-size: 1.6rem;
-  }
-
-  .section-course .course-div p {
-    font-size: 1.4rem;
-  }
-
-  .section-course .section-common-heading {
-    font-size: 2.4rem;
-  }
-
-  .section-course .section-common-subheading {
-    font-size: 1.6rem;
-    margin-bottom: 5rem;
-  }
-
-  .section-why-choose {
-    margin-bottom: 5rem;
-  }
-
-  .greed-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .left-side-content,
-  .chose-right-div {
-    text-align: center;
-    margin: 0;
-  }
-
-  .left-side-content .section-common--title,
-  .chose-right-div .section-common--title {
-    font-size: 1.6rem;
-  }
-
-  .Course-container h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .Course-container p {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-  }
-
-  .common-text--highlight {
-    width: 4rem;
-    height: 4rem;
-    font-size: 2rem;
-  }
-
-  .left-side-content .common-text--highlight {
-    margin-left: 0;
-  }
-
-  .chose-center-div {
-    display: block;
-    justify-content: center;
-  }
-
-  .section-contact--homepage {
-    bottom: 0;
-    padding: 2rem;
-  }
-
-  .section-contact--homepage h2 {
-    font-size: 2rem;
-  }
-
-  .section-contact--homepage p {
-    font-size: 1.4rem;
-  }
-
-  .section-contact--homepage .btn a {
-    padding: 0.8rem 2rem;
-    font-size: 1.4rem;
-  }
-
-  .site-footer {
-    padding: 2rem;
-    gap: 3rem;
-  }
-
-  .site-footer .footer-subheading {
-    font-size: 1.8rem;
-  }
-
-  .site-footer #para1 {
-    font-size: 1.4rem;
-  }
-
-  .site-footer a,
-  .site-footer p {
-    font-size: 1.4rem;
-  }
-
-  .social-footer--icons {
-    gap: 1rem;
-  }
-
-  .social-footer--icons .fa-brands {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.6rem;
-  }
-
-  .my-box {
-    height: auto;
-  }
-
-  .container grid grid-three--cols {
-    height: auto;
-  }
-}
