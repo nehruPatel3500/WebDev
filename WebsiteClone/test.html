@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            height: 100vh;
+            background-color: chocolate;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 4.5rem;
+        }
+        .child1{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+        }
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+        .child3{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+        .child4{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+         @media screen and (max-width: 768px){
+            .container{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                gap: 4.5rem;
+                background-color: blue;
+            
+        }
+    } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1"> Child 1 Content</div>
+        <div class="child2">Child 2 Content</div>
+        <div class="child3">Child 3 Content</div>
+        <div class="child4">Child 4 Content</div>
+    </div>
+    
+</body>
+</html>

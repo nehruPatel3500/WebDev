@@ -1,0 +1,148 @@
+/* Fonts For My Website */
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,600;0,700;1,400&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,500&family=Ubuntu:wght@400;500;700&display=swap');
+/* 
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;            */
+
+/* BASIC CSS RULE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    --primary-color: #27282c;
+}
+html,body{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+   
+}
+/* CSS for Header Section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    background-color: #27282c;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3) ;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+    margin-right: 15px;
+    align-items: center;
+    font-size: 2rem;
+  
+}
+.nav-items a{
+    font-family:'Poppins', monospace; ;
+    color: grey;
+    align-items: center;
+    text-align: center;
+   
+}
+.nav-items a:hover{
+    color: #fff;
+}
+.material-symbols-outlined{
+    font-size: 2rem;
+    align-items: center;
+}
+#menu-btn{
+    visibility: hidden;
+}
+.logo img{
+    width: auto;
+    height: 128px;
+}
+/* Down Nav Section */
+.down-nav-section{
+    width: 100%;
+    height :8rem;
+    background-color:var(--primary-color) ;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    gap: 15rem;
+    place-items: center;
+    & .sec1{
+        display: flex;
+        gap: 1.9rem;
+        align-items: start;
+        
+    
+        }
+        & h3{
+            font-size: 2.01rem;
+            color: #fff;
+            cursor: pointer;
+            
+        }
+ }
+.sec1 a{
+    font-size: 1.30rem;
+    cursor: pointer;
+    color:whitesmoke;
+    background-color:#3d3e42;
+    padding: 0.5rem;
+    border-radius: 2px;
+    padding-left: 1rem;
+}
+.sec2 ul{
+    display: flex;
+    justify-content: end;
+    gap: 2.5rem;
+   align-items: center;
+   padding-right: 0;
+  
+  
+}
+.sec2 ul li a{
+    font-size:  1.75rem;
+    color: grey;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+.sec2 ul li a:hover {
+    color: white;
+}
+#price-btn a{
+    background-color:var(--primary-color);
+    width: 5rem;
+    height: auto;
+    color:white;
+    padding:0.3rem 1.5rem 0.3rem  1.5rem ;
+text-align: center;
+border: 1px solid gray;
+border-radius: 15px;
+font-family: "Poppins", sans-serif;
+}
+#price-btn a:hover{
+    background-color: grey;
+}
+#download-btn a{
+    background-color:#4ca6ff;
+    width: 15rem;
+    height: auto;
+    color:white;
+    padding:0.3rem 1.5rem 0.3rem  1.5rem ;
+text-align: center;
+border: 1px solid gray;
+border-radius: 15px;
+font-family: "Poppins", sans-serif;
+}
+#download-btn a:hover{
+    background-color:  #087cfa;
+}
+
+
+
+/* Header Section end here */
