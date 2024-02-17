@@ -355,7 +355,7 @@ margin-left: 4.5rem;
 }
 .text-btn-bar{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-color:black;
     & h1{
         color: white;
@@ -396,12 +396,93 @@ margin-left: 4.5rem;
 
 }
 }
+/* I AM BACK GUYS */
+
+/* REVIEW SECTIN */
+
+.user-review-section{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    overflow: hidden;
+      
+    & .box{
+        width: 60rem;
+        height: 35rem;
+        background-color: #021a3a;
+        padding: 32px;
+        border-radius: 24px;
+        box-shadow: 0 16px 24px 0 rgba(0,0,0,.25);
+        margin-top: 5rem ;
+        display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+        animation: SlideShow 35s infinite linear;
+        
+       
+       
+    }
+    & .para-head{
+        font-size: 4.0rem;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    & .para{
+        color: white;
+        font-size: 1.8rem;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.5;
+        margin-top: 3rem;
+    }
+    & img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+
+    }
+    &  .profile-name{
     
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem;
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Roboto",sans-serif;
+           
+            }
+            & a{
+                color: white;
+                text-align: center;
+                font-family: "Oxygen",sans-serif;
+                margin: 0.6rem  0;
+                 &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+               
+            }
+           
+        }
+    .reviews{
+      width: fit-content;
+      display: flex;
+      gap: 3rem;
+
+
     
+    }
+    @keyframes SlideShow{
+        from{
+            transform: translateX(0);
+        }
+        to{transform:  translateX(calc(-6 * 60rem));
 
-
-
-
-
-    
-
+        }
+    }
+    .reviews:hover .box{
+        animation-play-state: paused;
+    }
+       
+   
