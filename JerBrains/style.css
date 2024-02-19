@@ -489,7 +489,7 @@ margin-left: 4.5rem;
 
     .feature-section{
         width: 100%;
-        height: 300vh;
+        height: 270vh;
        background-color: #02194b;
       
       
@@ -629,7 +629,7 @@ margin-left: 4.5rem;
          
     }
 }
-h1{
+.myHeader{
     font-size: 4rem;
     color: white;
     font-family: "Oxygen",sans-serif;
@@ -639,7 +639,225 @@ h1{
 
 }
 
+/* JOIN COMMUNITY SECTION */
+.join-community{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    padding-top: 5rem;
+    & .container-grid{
+        margin-top: 4rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto auto ;
+        justify-content: center;
+        align-items: center;
 
+        .submit-btn{
+            margin-left: 3rem;
+            text-align:center;
+            width: 10rem;
+            height: 4rem;
+            border-radius: 15px;
+            border-style: none;
+            margin-bottom: 3rem;
+           
+        }
+        & a,p{
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Poppins",sans-serif;
+            margin-left: 3rem;
+        }
+        .fa-paragraph{
+            color: grey;
+            margin-bottom: 2rem;
+        }
+        .link{
+            color: white;
+            cursor: pointer;
+            
+        }
+
+        & input{
+            width: 50rem;
+            height: 4rem;
+            margin-left: 3rem;
+            background-color: #27282c;
+            border: 1px solid grey;
+            margin-bottom: 2rem;
+            
+           
+              
+        }
+       
+    }
+     & h1{
+        font-size: 4rem;
+        color: white;
+        font-family: "Oxygen",sans-serif;
+        font-weight: 700;
+         margin-left: 2.5rem;
+         margin-left: 3rem;
+         margin-bottom: 3rem;
+    }
+    & h2{
+        font-size: 2rem;
+        color: white;
+        font-family: "Roboto",sans-serif;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+        margin: 3rem;
+        letter-spacing:3px;
+
+    }
+    & figure{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto auto auto;
+        column-gap: 2rem;
+        row-gap: 3rem;
+
+    }
+    & .Download-btn{
+        background-color:#4ca6ff;
+        color: white;
+        width: 15rem;
+        height: 4.5rem;
+        border: none;
+        border-radius: 25px;
+        font-size: 2rem;
+        padding: 1.2rem 1.2rem;
+        margin-left: 3rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #3498db;
+        }
+    }
+}
+input::placeholder{
+    padding: 10px;
+}
+.submit-btn:hover {
+    background-color:#2ecc71;
+    cursor: pointer;
+}
+
+.fa-ambulance:hover{
+    text-decoration: underline;
+}
 
     
+   .link:hover{
+    text-decoration: underline;
+   }
+   .cont1 ul li a{
+    line-height: 2.5;
+   }
+  .cont1 ul li a:hover{
+    text-decoration: underline;
+    
+  }
+  /* fa-book-open Footer */
+  .fa-book-open{
+    width: 100%;
+    height: 70vh;
+    background-color:#151619;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 0.1px solid grey;
+
+    & h2{
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1.7rem;
+        font-size: "Roboto", sans-serif;
+        text-align: start;
+    }
+    & a{
+        color: gray;
+        font-size: 1.3rem;
+        font-family: "Poppins",sans-serif;
+        line-height: 2.2;
+        transition: all 0.3s ease;
+        text-align: start;
+        &:hover{
+            color: white;
+            text-decoration:underline ;
+        }
+    }
+  }
+  /* FOOTER SECTION */
+  .footer{
+    width: 100%;
+    height: 50vh;
+    background-color:#151619;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    .social-media{
+        display: flex;
+        gap: 2rem;
+        & img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+    .fa-fu-header{
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    & h4 a{
+        font-size: 1.2rem;
+        color: grey;
+        font-size: "Roboto", sans-serif;
+        text-align: start;
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+
+    }
+    & p{
+        color:gray;
+            font-size: 1.5rem;
+            font-family: "Poppins",sans-serif;
+            margin-left: 1.rem;
+            margin-top: 7rem;
+            
+           
+            
+
+    }
+  }
+  .fa-fis {
+    & a{
+        margin: 2rem;
+    color: white;
+    font-size: 1.6rem;
+    align-items: center; 
+    width: 12rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 20px;
+    &:hover{
+        background-color: #27282c;
+    }
+    }
+    & span{
+        margin-right: 2rem;
+        padding-top: 3rem;
+        align-items: center;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+  }
    
